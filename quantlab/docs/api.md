@@ -1,4 +1,4 @@
-# QuantLab API Specification
+# FinMetrics API Specification
 
 Base URLs:
 - Root: `http://localhost:8000/`

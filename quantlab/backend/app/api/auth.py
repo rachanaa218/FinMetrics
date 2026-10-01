@@ -12,13 +12,13 @@ class LoginRequest(BaseModel):
 def login(payload: LoginRequest) -> Dict[str, Any]:
     if payload.username.strip() and payload.password:
         return {
-            "access_token": "quantlab-jwt-session-token-institutional-demo",
+            "access_token": "finmetrics-jwt-session-token-demo",
             "token_type": "bearer",
             "user": {
                 "id": "u-001",
                 "username": payload.username,
                 "name": "Alex Vance",
-                "email": f"{payload.username}@quantlab.internal",
+                "email": f"{payload.username}@finmetrics.internal",
                 "role": "Lead Quantitative Researcher",
                 "tier": "Enterprise Institutional"
             }
@@ -31,7 +31,7 @@ def get_current_user() -> Dict[str, Any]:
         "id": "u-001",
         "username": "quant_trader",
         "name": "Alex Vance",
-        "email": "alex.vance@quantlab.internal",
+        "email": "alex.vance@finmetrics.internal",
         "role": "Lead Quantitative Researcher",
         "tier": "Enterprise Institutional"
     }

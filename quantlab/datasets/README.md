@@ -1,4 +1,4 @@
-# QuantLab Datasets
+# FinMetrics Datasets
 
 This directory houses raw and processed time-series market data for key benchmark assets:
 1. **Gold (GC=F / XAU-USD)**: Continuous commodity futures / spot benchmark.
